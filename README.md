@@ -4,21 +4,23 @@ Iptables is a firewall, installed by default on many Linux distributions.  This 
 Note: When working with firewalls, do not block SSH communication; lock yourself out of your own server (port 22, by default).  
 
 Prerequisites:  
-'''
+```
 Install iptables persistent to save iptables  
-
+```
+```
 sudo apt install iptables-persistent 
- 
+``` 
 
 make a directory /etc/iptables  
-
-sudo mkdir /etc/iptables  
+```
+sudo mkdir /etc/iptables
+```
 useful commands:  
-
+```
 sudo iptables -L 
 sudo iptables -L -v 
 sudo iptables -S  
-   
+```   
 
 Introducing new rules:  
 
